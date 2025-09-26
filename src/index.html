@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile menu and responsive</title>
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <header class="h-[50px] flex justify-between bg-gray-800 text-white py-3 px-10 md:px-25">
+        <div class="logo">alamin</div>
+        <!-- Menu Icon (Hamburger) -->
+        <div id="menu-icon-equiv" class="cursor-pointer md:hidden z-50 relative">
+            <span id="open-icon">&equiv;</span>
+            <span id="close-icon" class="hidden">&times;</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-44 text-white bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40 md:hidden">
+            <ul class="p-4">
+                <li class="py-2 border-b">Home</li>
+                <li class="py-2 border-b">About</li>
+                <li class="py-2 border-b">Services</li>
+                <li class="py-2 border-b">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <article class="bg-gray-700 px-10 md:px-25 h-[calc(100vh-50px)] overflow-auto text-gray-200">
+        <h2 class="pt-20 text-2xl font-bold">Responsive Design in Modern Web Development</h2>
+        <p class="pt-5 w-[80%] md:w-[70%]">Responsive design ensures that a website looks and works well on all devices—desktops, tablets, and smartphones. Instead of building separate sites, developers use techniques like CSS media queries, flexible grids, and fluid images to adapt layouts automatically.<br><br> For example, a desktop site might show four columns, but the same page will display as a single column on mobile. This improves readability, navigation, and overall user experience.<br>Google also favors mobile-friendly sites in search rankings. In short, responsive design is not optional—it is essential for usability, accessibility, and success in today’s digital world.</p>
+    </article>
+
+</body>
+
+</html>
